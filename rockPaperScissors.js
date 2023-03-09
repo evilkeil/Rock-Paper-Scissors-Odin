@@ -25,8 +25,26 @@ console.log(playerSelection);
  }
 
  
- const PCChoice = computerSelectionRand();
+ const PCChoice = computerSelectionRand(); // store the computer`s randomized choice in a constant.
  console.log(PCChoice);
 
+function computerChoice(PCChoice){ //function to assign the choice of rock paper scissors to the random number
+    let x // variable to assign choice
+    if (PCChoice === 0){ 
+        x = "rock";
+        return x;
+    }else if (PCChoice === 1){
+        x = "paper";
+        return x;
+    }else {
+        x = "scissors";
+        return x;
+    }
+}
+
+const computerSelection = computerChoice(PCChoice); //assign to computerSelection which is the first parameter.
+
+
+console.log(computerSelection);
  
  
