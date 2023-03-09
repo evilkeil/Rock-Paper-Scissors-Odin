@@ -1,3 +1,5 @@
+for (let i = 0; i < 5; i++) {
+    // use for loop to make the game 5 rounds
 const select= prompt("Rock,Paper,Scissors","choose");   //Makes the user choose Rock,Paper or Scissors.
 
 
@@ -87,3 +89,4 @@ function RPC(playerSelection,computerSelection){
 console.log(RPC(playerSelection,computerSelection));
  
  
+}
