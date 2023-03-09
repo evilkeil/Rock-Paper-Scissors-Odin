@@ -46,5 +46,44 @@ const computerSelection = computerChoice(PCChoice); //assign to computerSelectio
 
 
 console.log(computerSelection);
+
+function RPC(playerSelection,computerSelection){
+    // The function for rock paper scissors
+
+    let player = playerSelection; //assign temp variables to make the code easier to read.
+    let comp = computerSelection;
+    let result;
+    switch (true){
+        case (player === comp):
+            result = `you both picked ${player} so its a draw`;
+            break;
+        case (player === "rock" && comp === "scissors"):
+            result ="your opponent chose scissors.You win because `rock beats scissors`. ";
+            break;
+        case (player === "rock" && comp === "paper"):
+            result="your opponent chose paper.You lose because `paper covers rock`.";
+            break;
+        case (player === "paper" && comp ==="scissors"):
+            result="your opponent chose scissors.You lose because `scissors cuts paper`.";
+            break;
+        case (player === "paper" && comp ==="rock"):
+            result="your opponent chose rock.You win because `paper covers rock`.";
+            break;
+        case (player === "scissors" && comp ==="paper"):
+            result="your opponent chose paper,You win because `scissors cuts paper`";
+            break;
+        case (player === "scissors" && comp ==="rock"):
+            result="your opponent chose rock,You lose because `rock beats scissors`";
+            break;
+        default:
+            result="please choose a correct choice";
+            
+        
+    }
+    return result;
+}
+
+
+console.log(RPC(playerSelection,computerSelection));
  
  
