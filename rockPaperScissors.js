@@ -1,9 +1,9 @@
-const select= prompt("Rock,Paper,Scissors","choose");   //Makes the user choose Rock,Paper or Scissors
+const select= prompt("Rock,Paper,Scissors","choose");   //Makes the user choose Rock,Paper or Scissors.
 
 console.log(select);
 
 let choice = (select) => { 
- //take the players choice and convert it to lowercase so that itll be case insensitive
+ //take the players choice and convert it to lowercase so that itll be case insensitive.
     select = select.toLowerCase();
    return select;
 
@@ -28,8 +28,8 @@ console.log(playerSelection);
  const PCChoice = computerSelectionRand(); // store the computer`s randomized choice in a constant.
  console.log(PCChoice);
 
-function computerChoice(PCChoice){ //function to assign the choice of rock paper scissors to the random number
-    let x // variable to assign choice
+function computerChoice(PCChoice){ //function to assign the choice of rock paper scissors to the random number.
+    let x // variable to assign choice.
     if (PCChoice === 0){ 
         x = "rock";
         return x;
@@ -48,7 +48,7 @@ const computerSelection = computerChoice(PCChoice); //assign to computerSelectio
 console.log(computerSelection);
 
 function RPC(playerSelection,computerSelection){
-    // The function for rock paper scissors
+    // The function for rock paper scissors.
 
     let player = playerSelection; //assign temp variables to make the code easier to read.
     let comp = computerSelection;
