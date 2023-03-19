@@ -8,14 +8,39 @@
     <link rel="stylesheet" href="styles.css">
     <title> Weeb Rock Paper Scissors</title>
 </head>
+<div id="title">
+    <h1>ROCK PAPER SCISSORS</h1>
+</div>
 <div id="hero">
     <figure><img src="images/rock paper scissors!.gif" alt="two anime girls playing rock paper scissors"></figure>
 </div>
+<h2>Choose Rock Paper or Scissors</h2>
 <div id="choices">
-    <img class="rock" src="images/rock.jpeg" alt="Rock">
-    <img class = "paper " src="images/paper.jpeg" alt="Paper">
-    <img class="scissors" src="images/scissors.jpeg" alt="Scissors">
+    <ul>
+        <li><img class="rock" src="images/rock.jpeg" alt="Rock"></li>
+        <li><img class = "paper " src="images/paper.jpeg" alt="Paper"></li>
+        <li><img class="scissors" src="images/scissors.jpeg" alt="Scissors"></li>
+    </ul>   
 </div>
+
+<div id="result" class="result-container">
+    <div class="result-text">
+        <h2>Results so far</h2>
+      <ul class="resultList">
+        <!-- li tags will be added here using JS when player wins -->
+      </ul>
+    </div>
+    <div class="result-image">
+      <figure class="resultImage">
+        <img src="images/win.jpeg" alt="You win">
+        <figcaption>YOU WIN</figcaption>
+      </figure>
+      <figure class="resultImage">
+        <img src="images/lose.jpeg" alt="You Lose">
+        <figcaption>YOU LOSE</figcaption>
+      </figure>
+    </div>
+  </div>
 
 <body>
     
