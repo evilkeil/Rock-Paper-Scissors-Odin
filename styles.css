@@ -108,3 +108,23 @@ h2{
 .resultImage figcaption{
     font-size: 2em;
 }
+
+.resultImage{
+    display: none;
+}
+
+.result-image .active {
+    display: block;
+}
+
+.top-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+}
