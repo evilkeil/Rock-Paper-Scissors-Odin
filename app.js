@@ -44,7 +44,8 @@ choices.addEventListener('click',function(e){
         winReaction.classList.remove('active');
         loseReaction.classList.remove('active');
     }
-    
+
+
 
    resultLogger(finalResult);
 
@@ -72,7 +73,7 @@ function computerSelectionRand(){
     let resultfinal;
     switch (true){
         case (player === comp):
-            result = `you both picked ${player} so its a draw`;
+            result = `you both chose the same thing. so its a draw`;
             resultfinal = "draw";
             break;
         case (player === 0 && comp === 1):
