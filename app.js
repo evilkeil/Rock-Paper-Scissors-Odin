@@ -44,9 +44,9 @@ choices.addEventListener('click',function(e){
         winReaction.classList.remove('active');
         loseReaction.classList.remove('active');
     }
+    
 
-
-   
+   resultLogger(finalResult);
 
    
    
