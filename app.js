@@ -45,6 +45,7 @@ choices.addEventListener('click',function(e){
         loseReaction.classList.remove('active');
     }
 
+
    
 
    
@@ -106,13 +107,18 @@ function computerSelectionRand(){
     return result;
 }
 
-// function checkIfContains(gameResult){
-//     let victory = "win";
-//     let defeat = "lose";
-//     let draw = "draw";
+function resultLogger(result){
+    let li = document.createElement('li');
+    let ul = document.querySelector('.resultList');
+    if (result.includes("win")){
+        li.style.color='#002B5B';
+    }else if(result.includes("lose")){
+        li.style.color='#EA5455';
+    }else if(result.includes("draw")){
+        li.style.color='#AD7BE9';
+    }{}
 
-//     if(gameResult.includes(victory)){
-//         return gameResult;
-//     }else if
+    li.textContent=result;
+    ul.appendChild(li);
 
-// }
+}
